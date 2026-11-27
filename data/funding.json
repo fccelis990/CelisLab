@@ -1,35 +1,46 @@
 {
   "projects": [
     {
-      "title": "Project title",
-      "agency": "Name of the agency",
-      "reference": "PID2025-000000",
-      "duration": "2025–2028",
-      "pi": "Your Name"
+      "title": "Advances in quantitative proteomics analysis using functional nanomaterials",
+      "agency": "Ministerio de Ciencia, Innovación y Universidades",
+      "reference": "PID2025-169504NA-I00",
+      "duration": "2027 – 2029",
+      "pi": "Francisco Calderón Celis"
     },
     {
-      "title": "Another funded project",
-      "agency": "Name of the agency",
-      "reference": "Reference",
-      "duration": "2024–2026",
-      "pi": "Name Surname"
+      "title": "Development of synthetic enzymes for controlled proteolysis",
+      "agency": "Marco de Autoevaluación de Excelencia-MaX",
+      "reference": "DEEP-Max-2024_IBBTEC",
+      "duration": "2026 – 2027",
+      "pi": "Francisco Calderón Celis"
+    },
+    {
+      "title": "Ramón y Cajal Fellowship",
+      "agency": "Ministerio de Ciencia, Innovación y Universidades",
+      "reference": "RYC2024-048391-I",
+      "duration": "2026 - 2030",
+      "pi": "Francisco Calderón Celis"
+    },
+    {
+      "title": "Margarita Salas Junior Fellowship",
+      "agency": "Fundación para el Fomento en Asturias de la Investigación Científica Aplicada y la Tecnología (FICYT)",
+      "reference": "AYUD/2021/58459",
+      "duration": "2022 - 2023",
+      "pi": "Francisco Calderón Celis"
     }
   ],
   "agencies": [
     {
-      "name": "Agency 1",
-      "logo": "",
-      "url": ""
+      "name": "MCIU",
+      "logo": "images/MICIU+AEI.jpg"
     },
     {
-      "name": "Agency 2",
-      "logo": "",
-      "url": ""
+      "name": "MCIU financiada",
+      "logo": "images/miciu-cofinanciadoUE-aei.png"
     },
     {
-      "name": "Agency 3",
-      "logo": "",
-      "url": ""
+      "name": "CSIC Max",
+      "logo": "images/Logo--CSIC-MAX--72ppp--COLOR.jpg"
     }
   ]
 }
