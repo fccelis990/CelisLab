@@ -2,24 +2,59 @@
   "items": [
     {
       "year": 2026,
-      "title": "Title of the paper goes here",
-      "link": "",
-      "authors": "**Your Name**, B. Surname, C. Surname",
-      "journal": "Journal Name, 12(3), 123–145"
-    },
-    {
-      "year": 2026,
-      "title": "Another paper title, a little longer to show wrapping",
-      "link": "",
-      "authors": "A. Surname, **Your Name**, C. Surname",
-      "journal": "Journal Name, 12(1), 10–22"
+      "title": "Advanced (nano)material-based enrichment strategies for quantitative phosphoproteomics analysis by mass spectrometry",
+      "link": "https://doi.org/10.1007/978-3-032-21638-0_3",
+      "authors": "Ortiz-Gómez I, **Celis FC***",
+      "journal": "Emerging Sample Treatments in Proteomics. Advances in Experimental Medicine and Biology"
     },
     {
       "year": 2025,
-      "title": "Title of an earlier paper",
-      "link": "",
-      "authors": "B. Surname, C. Surname, **Your Name**",
-      "journal": "Journal Name, 11(2), 45–67"
+      "title": "Seed-directed growth of gold nanostars on paper via inkjet-printing for the development of a sensitive glucose sensor",
+      "link": "https://doi.org/10.1016/j.greeac.2025.100305",
+      "authors": "Ortiz-Gómez I, **Celis FC**, Costa-Fernández JM, Fernández-Lodeiro C, Lodeiro C, Fernández-Lodeiro J.",
+      "journal": "Green Analytical Chemistry"
+    },
+    {
+      "year": 2025,
+      "title": "Siderophore-Dependent and -Independent Iron Acquisition Pathways in *Marinobacter Nauticus SP17*",
+      "link": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.70176",
+      "authors": "Ducos K, Hakil F, Kinska K, Angaïts A, **Celis FC**, Lobinski R, Nolivos S, Grimaud R.",
+      "journal": "Environmental Microbiology"
+    },
+    {
+      "year": 2025,
+      "title": "Exploring Proteomics Workflows: Hands-on Learning and Evaluation of Analytical Techniques in Proteomics",
+      "link": "https://doi.org/10.1021/acs.jchemed.4c01460",
+      "authors": "**Celis FC***, Manrique García P, Bettmer J, Encinar JR.",
+      "journal": "Journal of Chemical Education"
+    },
+    {
+      "year": 2024,
+      "title": "Quantification of snake venom proteomes by mass spectrometry-considerations and perspectives",
+      "link": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/mas.21850",
+      "authors": "Calvete JJ, Lomonte B, Saviola AJ, **Celis FC**, Ruiz Encinar J.",
+      "journal": "Mass Spectrometry Reviews"
+    },
+    {
+      "year": 2024,
+      "title": "An in-depth physicochemical investigation of drug-loaded core–shell UiO66 nanoMOFs",
+      "link": "https://pubs.rsc.org/ra/article/14/3/1676/825613/An-in-depth-physicochemical-investigation-of-drug",
+      "authors": "Ding M, Moreira-Álvarez B, **Celis FC**, Costa-Fernández JM, Encinar JR, Gref R.",
+      "journal": "RSC Advances"
+    },
+    {
+      "year": 2023,
+      "title": "Unveiling the pool of metallophores in native environments and correlation to their potential producers",
+      "link": "https://pubs.acs.org/esthag/article/57/45/17302/315546/Unveiling-the-Pool-of-Metallophores-in-Native",
+      "authors": "**Celis FC***, González-Álvarez I, Fabjanowicz M, Godin S, Ouerdane L, Lauga B, Lobinski R.",
+      "journal": "Environmental Science and Technology"
+    },
+    {
+      "year": 2023,
+      "title": "Certification of protein biomarker standards using element MS and generic standards: Application to human cytokines",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0003267023002234",
+      "authors": "Escudero-Cernuda S, García de Pablos C, **Celis FC***, Fernández-Sánchez ML, Encinar JR.",
+      "journal": "Analytica Chimica Acta"
     }
   ]
 }
