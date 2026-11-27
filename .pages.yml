@@ -40,6 +40,7 @@ content:
           - { name: email, label: Email, type: string }
           - { name: linkedin, label: LinkedIn (URL), type: string }
           - { name: orcid, label: ORCID (ID or URL), type: string }
+          - { name: teaching, label: Teaching, type: string }
           - { name: bio, label: Interests (short line), type: text }
           - { name: past, label: Past member, type: boolean }
           - { name: years, label: Years in the group (past members), type: string }
