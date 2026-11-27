@@ -222,6 +222,7 @@ get('team').then(d=>{
   if(p.email)s.push(`<a href="mailto:${esc(p.email)}" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>`);
   if(p.linkedin)s.push(`<a href="${esc(lnk(p.linkedin))}" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a>`);
   if(p.orcid){const o=/^\d{4}-/.test(p.orcid.trim())?'https://orcid.org/'+p.orcid.trim():lnk(p.orcid);s.push(`<a href="${esc(o)}" target="_blank" rel="noopener" aria-label="ORCID"><svg class="ic"><use href="#i-id"/></svg></a>`)}
+  if(p.teaching)s.push(`<a class="txt" href="${esc(lnk(p.teaching))}" target="_blank" rel="noopener">Teaching</a>`);
   return `<div class="card"><div class="av">${p.photo?`<img src="${esc(img(p.photo))}" alt="${esc(p.name)}">`:esc(ini)}</div><h3>${esc(p.name)}</h3><p class="role">${esc(p.role)}</p>${s.length?`<div class="soc">${s.join('')}</div>`:''}${p.bio?`<p>${esc(p.bio)}</p>`:''}</div>`;
  };
  set('team-list',cur.map(person).join(''));
