@@ -1,0 +1,6 @@
+content:
+  - name: website
+    label: Website
+    type: file
+    path: index.html
+    format: code
