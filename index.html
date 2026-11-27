@@ -239,7 +239,7 @@ get('publications').then(d=>{
 
 get('funding').then(d=>{
  const row=(k,v)=>v?`<span>${k}: ${esc(v)}</span>`:'';
- set('projects',(d.projects||[]).map(p=>`<div class="prj"><b>${esc(p.title)}</b>${row('Funding agency',p.agency)}${row('Reference',p.reference)}${row('Duration',p.duration)}${row('PI',p.pi)}</div>`).join(''));
+ set('projects',(d.projects||[]).map(p=>`<div class="prj"><b>${esc(p.title)}</b>${row('Funding agency',p.agency)}${row('Call',p.call)}${row('Reference',p.reference)}${row('Duration',p.duration)}${row('PI',p.pi)}</div>`).join(''));
  set('agencies',(d.agencies||[]).map(a=>{
   const inner=a.logo?`<img src="${esc(img(a.logo))}" alt="${esc(a.name)}">`:esc(a.name);
   return a.url?`<a class="lg" href="${esc(lnk(a.url))}" target="_blank" rel="noopener">${inner}</a>`:`<div class="lg">${inner}</div>`;
