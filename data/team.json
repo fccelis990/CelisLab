@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "name": "Dr. Your Name",
+      "role": "Principal Investigator",
+      "photo": "",
+      "email": "name@university.edu",
+      "linkedin": "",
+      "orcid": "",
+      "bio": "Short line about research interests.",
+      "past": false,
+      "years": "",
+      "now": ""
+    },
+    {
+      "name": "Dr. Name Surname",
+      "role": "Postdoctoral Researcher",
+      "photo": "",
+      "email": "",
+      "linkedin": "",
+      "orcid": "",
+      "bio": "Short line about research interests.",
+      "past": false,
+      "years": "",
+      "now": ""
+    },
+    {
+      "name": "Name Surname",
+      "role": "PhD Student",
+      "photo": "",
+      "email": "",
+      "linkedin": "",
+      "orcid": "",
+      "bio": "Short line about research interests.",
+      "past": false,
+      "years": "",
+      "now": ""
+    },
+    {
+      "name": "Name Surname",
+      "role": "PhD Student",
+      "photo": "",
+      "email": "",
+      "linkedin": "",
+      "orcid": "",
+      "bio": "",
+      "past": true,
+      "years": "2021–2025",
+      "now": "Postdoc at Institution"
+    },
+    {
+      "name": "Name Surname",
+      "role": "MSc Student",
+      "photo": "",
+      "email": "",
+      "linkedin": "",
+      "orcid": "",
+      "bio": "",
+      "past": true,
+      "years": "2023–2024",
+      "now": "Analyst at Company"
+    }
+  ]
+}

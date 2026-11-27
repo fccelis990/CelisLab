@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biomolecular Analysis and Characterization</title>
+<meta name="description" content="Research group working at the interface of analytical chemistry and molecular biochemistry: quantitative proteomics, functional nanomaterials and environmental biomolecule characterization.">
+<meta property="og:title" content="Biomolecular Analysis and Characterization">
+<link rel="icon" href="images/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f5;--deep:#173d46;--surface:#fff;--text:#1d2433;--muted:#5d6678;--line:#dde5e0;--accent:#0b7f8a;--accent-soft:#e0f1f2;--c1:#ff6b5b;--c2:#7c5cff;--c3:#f5a623;--c4:#12b5a6;
+--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1417;--surface:#161d21;--text:#e8ece9;--muted:#9aa5a8;--line:#27323a;--accent:#6fc2b9;--accent-soft:#17302f;--deep:#9fd8d1;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1417;--surface:#161d21;--text:#e8ece9;--muted:#9aa5a8;--line:#27323a;--accent:#6fc2b9;--accent-soft:#17302f;--deep:#9fd8d1;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding:.45rem 1.5rem;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+.brand{display:block;line-height:0}.brand img{height:55px;width:auto;display:block}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand img{background:#fff;padding:4px 10px;border-radius:8px}}
+:root[data-theme="dark"] .brand img{background:#fff;padding:4px 10px;border-radius:8px}
+nav{display:flex;gap:.25rem;overflow-x:auto}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500;padding:.4rem .75rem;border-radius:999px;white-space:nowrap}
+nav a.on{background:var(--accent-soft);color:var(--accent)}
+.view{display:none;animation:in .35s ease}.view.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero{position:relative;overflow:hidden;min-height:max(560px,calc(100svh - 90px));display:flex;align-items:center;padding:4rem 0;
+background:radial-gradient(800px 480px at 95% 0%,color-mix(in srgb,var(--c2) 24%,transparent),transparent 70%),radial-gradient(700px 460px at 0% 100%,color-mix(in srgb,var(--c4) 24%,transparent),transparent 70%),radial-gradient(600px 340px at 60% 110%,color-mix(in srgb,var(--c1) 20%,transparent),transparent 70%)}
+@media (pointer:fine){.hero{cursor:none}.hero a{cursor:pointer}}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.hero .in{max-width:880px;margin:0 auto;text-align:center}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);max-width:25ch;margin:0 auto}
+.hero p{color:var(--muted);font-size:1.23rem;margin:1.4rem auto 2rem;max-width:68ch}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}.hero .btns{justify-content:center}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:.98rem;border:1px solid var(--accent)}
+.btn.p{background:linear-gradient(135deg,#6a4cff,#0e9aa7);border-color:transparent;color:#fff}.btn.s{color:var(--accent)}.btn.g{background:#1f9d6b;border-color:transparent;color:#fff}
+.logos{display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap;padding:3rem 0}
+.lg{display:flex;align-items:center;justify-content:center;min-width:220px;height:84px;padding:0 1.5rem;border:1px dashed var(--line);border-radius:12px;color:var(--muted);text-decoration:none;font-weight:500;text-align:center}
+.lg:hover{color:var(--accent);border-color:var(--accent)}
+h2.sh{font-size:1.7rem;margin-bottom:1.2rem}
+.nw{display:grid;gap:1.5rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.nw.has{grid-template-columns:220px 1fr}
+.ni{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,var(--c2),var(--c4));overflow:hidden}.ni img{width:100%;height:100%;object-fit:cover}
+.nw time{font-size:.85rem;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}.chip{font:inherit;font-size:.9rem;font-weight:500;padding:.4rem 1rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}.chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.lead,.row p,.nw p,.cols p,.cols li{text-align:justify;hyphens:none}
+.hero p{text-align:center;hyphens:none}
+.lg:has(img){border-color:transparent}.lg img{max-height:64px;max-width:200px;width:auto}
+.ph:has(img){padding:0;overflow:hidden}
+.tg{display:inline-block;margin-left:.6rem;padding:.05rem .65rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.75rem;font-weight:600}
+.nw h3{font-size:1.3rem;margin:.2rem 0 .4rem}.nw p{margin:0;color:var(--muted)}
+.page{padding:4rem 0 5rem}
+.page h1{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:.8rem}
+.lead{color:var(--muted);margin:0 0 2.5rem}
+.lead.hl{color:var(--deep);font-weight:600;font-size:1.1rem}
+.sub{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.6rem);color:var(--accent);margin:0 0 1.6rem;line-height:1.3;text-wrap:balance}
+.row{display:grid;grid-template-columns:260px 1fr;gap:4rem;align-items:center;padding:4rem 0;border-top:1px solid var(--line)}
+.row.alt{grid-template-columns:1fr 260px}.row.alt .fg{order:2}
+.fg{width:250px;height:250px;border-radius:50%;display:grid;place-items:center;margin:auto;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--k) 24%,transparent),color-mix(in srgb,var(--k) 6%,transparent))}
+.n{font-family:var(--serif);color:var(--k);letter-spacing:.12em;font-size:1rem;margin-bottom:.5rem}
+.row h3{font-size:1.9rem;margin-bottom:.8rem}.row p{font-size:1.08rem}
+.row p{margin:0;color:var(--muted);max-width:52ch}
+.row p.why{margin-top:1.1rem;font-size:.9rem;line-height:1.6;color:var(--text);max-width:62ch}
+.why b{display:block;color:var(--k);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;margin-bottom:.15rem}
+.fig{width:100%;max-width:215px;height:auto;color:var(--accent)}
+.fig .l{fill:none;stroke:currentColor;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.np{fill:#f5b301;stroke:#b87a00;stroke-width:2}
+.prj{padding:1rem 0;border-top:1px solid var(--line)}.prj b{display:block}.prj span{display:block;color:var(--muted);font-size:.95rem}
+.ag{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
+.ag .lg{min-width:150px;height:64px;font-size:.9rem}
+.year{font-family:var(--sans);font-weight:600;font-size:1.7rem;letter-spacing:.03em;color:var(--accent);margin:2.8rem 0 .4rem}
+.pub{padding:1rem 0;border-bottom:1px solid var(--line)}
+.pub .t{font-weight:600;text-decoration:none;color:var(--text);font-size:1.08rem}.pub .t:hover{color:var(--accent);text-decoration:underline}
+.pub .au{color:var(--muted);font-size:.95rem;margin-top:.2rem}.pub .au b{color:var(--text)}
+.pub .jr{font-style:italic;color:var(--muted);font-size:.95rem}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.6rem;text-align:center}
+.av{width:96px;height:96px;border-radius:50%;margin:0 auto 1rem;display:grid;place-items:center;font-family:var(--serif);font-size:1.7rem;background:var(--line);color:var(--muted);overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+.card h3{font-size:1.15rem}.card p{margin:.2rem 0 0;font-size:.92rem;color:var(--muted)}
+.card .role{color:var(--accent);font-weight:500}
+.soc{display:flex;gap:.6rem;justify-content:center;margin:.7rem 0}
+.soc a{color:var(--muted);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line)}
+.soc a:hover{color:var(--accent);border-color:var(--accent)}
+.ic{width:16px;height:16px}
+.past{display:grid;gap:.6rem 2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.past div{padding:.6rem 0;border-bottom:1px solid var(--line)}.past span{display:block;color:var(--muted);font-size:.92rem}
+.cols{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cols h2{font-size:1.5rem;margin-bottom:.8rem}.cols ul{padding-left:1.1rem;color:var(--muted)}
+.info p{margin:.2rem 0 1rem;color:var(--muted)}.info b{color:var(--text);display:block}
+.ph{min-height:280px;border-radius:16px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:1rem;background:linear-gradient(135deg,var(--accent-soft),var(--surface));border:1px solid var(--line)}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;padding:2rem 0}
+@media (max-width:760px){.row,.row.alt,.nw.has{grid-template-columns:1fr;gap:1.5rem}.row.alt .fg{order:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M4 9h4v11H4zM6 3.5a2.2 2.2 0 110 4.4 2.2 2.2 0 010-4.4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.5 0 4.4 2.2 4.4 5.2V20h-4v-5.3c0-1.3-.2-2.4-1.7-2.4s-2.1 1-2.1 2.5V20h-4z"/></symbol>
+<symbol id="i-id" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 8v8M12 8h2a3 3 0 010 8h-2z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+<header><div class="bar">
+<a class="brand" href="#home" aria-label="Home"><img src="images/logo.webp" alt="Group logo"></a>
+<nav id="nav"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#team">Team</a><a href="#news">News</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<section class="view" id="home">
+<div class="hero"><canvas id="cv" aria-hidden="true"></canvas>
+<div class="wrap"><div class="in"><h1>Welcome to the Biomolecular Analysis and Characterization group</h1>
+<p>We work at the interface of analytical chemistry and molecular biochemistry, developing quantitative methods and functional materials to advance quantitative proteomics workflows and environmental biomolecule characterization.</p>
+<div class="btns"><a class="btn p" href="#research">Explore our research</a><a class="btn g" href="#contact">Join the group</a></div></div></div></div>
+<div class="wrap">
+<div class="logos">
+<a class="lg" href="https://web.unican.es/" target="_blank" rel="noopener"><img src="images/logo-unican.png" alt="Universidad de Cantabria" onerror="this.replaceWith(this.alt)"></a>
+<a class="lg" href="https://web.unican.es/ibbtec/" target="_blank" rel="noopener"><img src="images/logo-ibbtec.png" alt="IBBTEC" onerror="this.replaceWith(this.alt)"></a></div>
+<h2 class="sh">News</h2>
+<div id="homenews"></div>
+<p style="margin:1.2rem 0 0"><a class="btn s" href="#news">View all news →</a></p>
+<div style="height:4rem"></div>
+</div></section>
+
+<section class="view" id="research"><div class="wrap page">
+<h1>Research</h1>
+<p class="sub">From analytical measurement to a deeper understanding of biomolecular complexity</p>
+<p class="lead">We investigate proteins and proteoforms using quantitative analytical approaches, biochemical characterization and functional nanomaterials. Our goal is to develop new biochemical methods and analytical tools that improve quantitative biomolecular analysis. In particular, we make protein digestion and PTM enrichment more efficient and selective, enhancing the characterization and quantification of proteins and proteoforms in complex biological systems.</p>
+<div class="row" style="--k:var(--c1)"><div class="fg"><svg class="fig" viewBox="0 0 240 150" aria-hidden="true"><polyline points="24.0,104.0 34.0,88.0 48.0,80.0 60.0,90.0 58.0,106.0 70.0,114.0 84.0,106.0 90.0,90.0" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="24.0" cy="104.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="22.7" cy="102.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="34.0" cy="88.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="32.7" cy="86.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="48.0" cy="80.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="46.7" cy="78.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="60.0" cy="90.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="58.7" cy="88.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="58.0" cy="106.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="56.7" cy="104.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="70.0" cy="114.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="68.7" cy="112.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="84.0" cy="106.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="82.7" cy="104.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="90.0" cy="90.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="88.7" cy="88.7" r="1.4" style="fill:#fff;opacity:.4"/><defs><radialGradient id="n1" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#e8f4ff"/><stop offset=".5" stop-color="#3b82f6"/><stop offset="1" stop-color="#1e3a8a"/></radialGradient></defs><circle cx="116" cy="75" r="29" style="fill:rgba(0,200,255,.16)"/><circle cx="116" cy="75" r="20" fill="url(#n1)"/><circle cx="108" cy="68" r="2.2" fill="#fff" opacity=".8"/><circle cx="122" cy="82" r="2.2" fill="#fff" opacity=".8"/><polyline points="154.0,38.0 165.0,32.0 176.0,38.0" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="154.0" cy="38.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="152.7" cy="36.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="165.0" cy="32.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="163.7" cy="30.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="176.0" cy="38.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="174.7" cy="36.7" r="1.4" style="fill:#fff;opacity:.4"/><polyline points="160.0,76.0 171.0,83.0 182.0,76.0 193.0,83.0" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="160.0" cy="76.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="158.7" cy="74.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="171.0" cy="83.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="169.7" cy="81.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="182.0" cy="76.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="180.7" cy="74.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="193.0" cy="83.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="191.7" cy="81.7" r="1.4" style="fill:#fff;opacity:.4"/><polyline points="154.0,118.0 165.0,112.0 176.0,118.0" style="fill:none;stroke:var(--c1);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="154.0" cy="118.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="152.7" cy="116.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="165.0" cy="112.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="163.7" cy="110.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="176.0" cy="118.0" r="4.6" style="fill:var(--c1);opacity:1"/><circle cx="174.7" cy="116.7" r="1.4" style="fill:#fff;opacity:.4"/></svg></div><div><h3>Proteolysis</h3><p>We explore functional nanomaterials as proteolytic tools for protein digestion and peptide generation, opening alternative routes for proteomics workflows.</p><p class="why"><b>Why it matters</b>Quantitative proteomics often relies on relative rather than truly absolute measurements. Protein digestion is one of the key steps limiting quantitative accuracy, as conventional enzymatic digestion is intrinsically sensitive to protein structure, the surrounding environment, and reaction conditions, often resulting in incomplete cleavage and biased peptide recovery. Faster, more reproducible digestion improves the coverage and reliability of proteomic analyses.</p></div></div>
+<div class="row alt" style="--k:var(--c2)"><div class="fg"><svg class="fig" viewBox="0 0 240 150" aria-hidden="true"><defs><radialGradient id="n2" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#e8f4ff"/><stop offset=".5" stop-color="#3b82f6"/><stop offset="1" stop-color="#1e3a8a"/></radialGradient></defs><circle cx="120" cy="75" r="35" style="fill:rgba(0,200,255,.16)"/><circle cx="120" cy="75" r="26" fill="url(#n2)"/><polyline points="52.0,30.0 62.0,24.0 73.0,32.0 83.0,44.0 95.0,54.0" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="52.0" cy="30.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="50.7" cy="28.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="62.0" cy="24.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="60.7" cy="22.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="73.0" cy="32.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="71.7" cy="30.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="83.0" cy="44.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="81.7" cy="42.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="95.0" cy="54.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="93.7" cy="52.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="97" cy="56" r="6.5" style="fill:var(--c1)"/><text x="97" y="59.2" text-anchor="middle" font-size="9" font-weight="700" font-family="sans-serif" fill="#fff">P</text><polyline points="200.0,34.0 188.0,26.0 176.0,34.0 164.0,46.0 153.0,55.0" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="200.0" cy="34.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="198.7" cy="32.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="188.0" cy="26.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="186.7" cy="24.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="176.0" cy="34.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="174.7" cy="32.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="164.0" cy="46.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="162.7" cy="44.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="153.0" cy="55.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="151.7" cy="53.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="147" cy="59" r="6.5" style="fill:var(--c1)"/><text x="147" y="62.2" text-anchor="middle" font-size="9" font-weight="700" font-family="sans-serif" fill="#fff">P</text><polyline points="196.0,126.0 186.0,114.0 174.0,120.0 160.0,112.0 148.0,104.0" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="196.0" cy="126.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="194.7" cy="124.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="186.0" cy="114.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="184.7" cy="112.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="174.0" cy="120.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="172.7" cy="118.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="160.0" cy="112.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="158.7" cy="110.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="148.0" cy="104.0" r="4.6" style="fill:var(--c2);opacity:1"/><circle cx="146.7" cy="102.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="141" cy="99" r="6.5" style="fill:var(--c1)"/><text x="141" y="102.2" text-anchor="middle" font-size="9" font-weight="700" font-family="sans-serif" fill="#fff">P</text><polyline points="24.0,118.0 36.0,112.0 48.0,120.0 58.0,112.0" style="fill:none;stroke:var(--muted);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:0.55"/><circle cx="24.0" cy="118.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="22.7" cy="116.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="36.0" cy="112.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="34.7" cy="110.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="48.0" cy="120.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="46.7" cy="118.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="58.0" cy="112.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="56.7" cy="110.7" r="1.4" style="fill:#fff;opacity:.4"/><polyline points="204.0,80.0 215.0,88.0 206.0,98.0" style="fill:none;stroke:var(--muted);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:0.55"/><circle cx="204.0" cy="80.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="202.7" cy="78.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="215.0" cy="88.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="213.7" cy="86.7" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="206.0" cy="98.0" r="4.2" style="fill:var(--muted);opacity:0.55"/><circle cx="204.7" cy="96.7" r="1.4" style="fill:#fff;opacity:.4"/></svg></div><div><h3>Selective enrichment of PTMs</h3><p>We investigate selective enrichment strategies for phosphopeptides, combining functional materials and analytical workflows to improve the analysis of phosphorylation patterns.</p><p class="why"><b>Why it matters</b>Post-translational modifications (PTMs), such as phosphorylation, play essential roles in regulating biological processes and represent important analytical targets in proteomics. Many chemically modified proteins and peptides are present at low abundance, while PTMs often occur substoichiometrically, meaning that only a small fraction of the protein population is modified at a given time. Selective enrichment strategies prior to mass spectrometric analysis are therefore essential to improve the detection and coverage of modified species.</p></div></div>
+<div class="row" style="--k:var(--c4)"><div class="fg"><svg class="fig" viewBox="0 0 240 150" aria-hidden="true"><g transform="rotate(-18 40 80)"><rect x="12" y="66" width="56" height="28" rx="14" style="fill:var(--c4)"/><circle cx="30" cy="80" r="3" style="fill:#fff;opacity:.5"/><circle cx="46" cy="76" r="2.4" style="fill:#fff;opacity:.5"/><circle cx="52" cy="85" r="2.8" style="fill:#fff;opacity:.5"/></g><path d="M66 70C86 54 96 50 108 58" style="fill:none;stroke:var(--muted);stroke-width:1.6;stroke-dasharray:3 4;stroke-linecap:round"/><polyline points="154.1,86.9 144.9,91.4 134.7,91.3 125.6,86.6 119.6,78.2 118.1,68.1 121.3,58.3 128.7,51.1 138.5,48.1 148.6,49.7" style="fill:none;stroke:var(--c2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:1"/><circle cx="154.1" cy="86.9" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="152.8" cy="85.6" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="144.9" cy="91.4" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="143.6" cy="90.1" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="134.7" cy="91.3" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="133.4" cy="90.0" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="125.6" cy="86.6" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="124.3" cy="85.3" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="119.6" cy="78.2" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="118.3" cy="76.9" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="118.1" cy="68.1" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="116.8" cy="66.8" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="121.3" cy="58.3" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="120.0" cy="57.0" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="128.7" cy="51.1" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="127.4" cy="49.8" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="138.5" cy="48.1" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="137.2" cy="46.8" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="148.6" cy="49.7" r="3.8" style="fill:var(--c2);opacity:1"/><circle cx="147.3" cy="48.4" r="1.4" style="fill:#fff;opacity:.4"/><circle cx="140" cy="70" r="9" style="fill:var(--c3)"/><circle cx="137" cy="67" r="2.5" style="fill:#fff;opacity:.6"/><polygon points="176,122 186,102 208,98 226,110 224,130 198,138" style="fill:var(--muted);opacity:.35"/><circle cx="192" cy="92" r="4.5" style="fill:var(--c3)"/><circle cx="180" cy="84" r="3.6" style="fill:var(--c3)"/><circle cx="170" cy="104" r="3.4" style="fill:var(--c3)"/></svg></div><div><h3>Environmental chelators</h3><p>Bacteria and plants produce metal chelators to scavenge essential metals and minerals from their environment. We develop new strategies to characterize these compounds.</p><p class="why"><b>Why it matters</b>Knowing how organisms capture metals helps us understand nutrient availability in soils, plant and microbial health, and the fate of metals in the environment.</p></div></div>
+<h2 class="sh" style="margin-top:3rem">Funding</h2>
+<div id="projects"></div>
+<div class="ag" id="agencies"></div>
+</div></section>
+
+<section class="view" id="publications"><div class="wrap page">
+<h1>Publications</h1>
+<p class="lead">A selection of our recent work. Full lists are available on <a href="#">Google Scholar</a> and <a href="#">ORCID</a>.</p>
+<div id="pubs"></div>
+</div></section>
+
+<section class="view" id="team"><div class="wrap page">
+<h1>Team</h1>
+<div class="grid team" id="team-list"></div>
+<h2 class="sh" id="past-h" style="margin-top:6rem">Past members</h2>
+<div class="past" id="past-list"></div></div></section>
+
+<section class="view" id="news"><div class="wrap page">
+<h1>News</h1>
+<p class="lead">Updates from the group: papers, open positions, awards and outreach.</p>
+<div class="filters" id="filters"></div>
+<div id="newslist"></div></div></section>
+
+<section class="view" id="contact"><div class="wrap page">
+<h1>Contact</h1>
+<p class="lead hl" style="margin-bottom:.5rem">We are always happy to hear from prospective students, postdocs and collaborators.</p>
+<p class="lead hl" style="margin-bottom:.5rem">We are also open to hosting Erasmus+, Bachelor’s and Master’s thesis students (TFG/TFM).</p>
+<p class="lead hl">Tell us about your interests and we will find a project that fits.</p>
+<div class="cols">
+<div><h2>Join the group</h2><p style="color:var(--muted)">If you are interested in our research, send us a short message including:</p>
+<ul><li>A brief introduction and your background</li><li>Your CV</li><li>The topics you would like to work on</li></ul></div>
+<div class="info"><h2>Get in touch</h2>
+<p><b>Email</b><a href="mailto:name@university.edu">name@university.edu</a></p>
+<p><b>Address</b>Instituto de Biomedicina y Biotecnología de Cantabria (IBBTEC)<br>C/ Albert Einstein 22, PCTCAN<br>39011 Santander, Spain</p></div>
+</div>
+<div class="cols" style="margin-top:3rem">
+<div class="ph"><img src="images/building.jpg" alt="Building" style="width:100%;height:100%;min-height:280px;object-fit:cover" onerror="this.parentNode.innerHTML='<span>Photo of the building<br><small>(add images/building.jpg)</small></span>'"></div>
+<div class="ph"><span>Google Maps embed<br><small>paste the iframe code here</small><br><a href="https://www.google.com/maps/search/?api=1&amp;query=IBBTEC+Santander" target="_blank" rel="noopener">Open in Google Maps</a></span></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Biomolecular Analysis and Characterization · Universidad de Cantabria · IBBTEC</div></footer>
+
+<script>
+(function(){
+const ids=['home','research','publications','team','news','contact'];
+function show(){
+ const h=(location.hash||'').slice(1),id=ids.includes(h)?h:'home';
+ ids.forEach(v=>document.getElementById(v).classList.toggle('on',v===id));
+ document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));
+ window.scrollTo(0,0);
+}
+addEventListener('hashchange',show);show();
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const img=p=>String(p||'').replace(/^\/+/,'');
+const lnk=u=>{u=String(u||'').trim();return !u?'':/^https?:\/\//i.test(u)?u:'https://'+u};
+const get=f=>fetch('data/'+f+'.json').then(r=>r.json()).catch(()=>({}));
+const set=(id,h)=>{const e=document.getElementById(id);if(e)e.innerHTML=h};
+const fmt=d=>{const x=new Date(d);return isNaN(x)?'':x.toLocaleDateString('en-GB',{month:'short',year:'numeric'}).toUpperCase()};
+
+get('news').then(d=>{
+ const a=(d.items||[]).slice().sort((x,y)=>new Date(y.date)-new Date(x.date));
+ const card=n=>{
+  const t=n.link?`<a href="${esc(lnk(n.link))}" target="_blank" rel="noopener">${esc(n.title)}</a>`:esc(n.title);
+  return `<article class="nw${n.image?' has':''}" data-tag="${esc(n.tag)}">${n.image?`<div class="ni"><img src="${esc(img(n.image))}" alt=""></div>`:''}<div><time>${fmt(n.date)}</time>${n.tag?`<span class="tg">${esc(n.tag)}</span>`:''}<h3>${t}</h3><p>${esc(n.text)}</p></div></article>`;
+ };
+ set('homenews',a.slice(0,4).map(card).join(''));
+ set('newslist',a.map(card).join(''));
+ const tags=[...new Set(a.map(n=>n.tag).filter(Boolean))],fb=document.getElementById('filters');
+ fb.innerHTML='';
+ if(tags.length>1)['All',...tags].forEach((t,i)=>{
+  const b=document.createElement('button');b.type='button';b.className='chip'+(i?'':' on');b.textContent=t;
+  b.onclick=()=>{[...fb.children].forEach(c=>c.classList.toggle('on',c===b));
+   document.querySelectorAll('#newslist .nw').forEach(n=>n.style.display=(!i||n.dataset.tag===t)?'':'none')};
+  fb.appendChild(b);
+ });
+});
+
+get('team').then(d=>{
+ const all=d.items||[],cur=all.filter(p=>!p.past),past=all.filter(p=>p.past);
+ const person=p=>{
+  const ini=(p.name||'').replace(/^(Dr|Prof)\.?\s+/i,'').split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
+  const s=[];
+  if(p.email)s.push(`<a href="mailto:${esc(p.email)}" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>`);
+  if(p.linkedin)s.push(`<a href="${esc(lnk(p.linkedin))}" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a>`);
+  if(p.orcid){const o=/^\d{4}-/.test(p.orcid.trim())?'https://orcid.org/'+p.orcid.trim():lnk(p.orcid);s.push(`<a href="${esc(o)}" target="_blank" rel="noopener" aria-label="ORCID"><svg class="ic"><use href="#i-id"/></svg></a>`)}
+  return `<div class="card"><div class="av">${p.photo?`<img src="${esc(img(p.photo))}" alt="${esc(p.name)}">`:esc(ini)}</div><h3>${esc(p.name)}</h3><p class="role">${esc(p.role)}</p>${s.length?`<div class="soc">${s.join('')}</div>`:''}${p.bio?`<p>${esc(p.bio)}</p>`:''}</div>`;
+ };
+ set('team-list',cur.map(person).join(''));
+ set('past-list',past.map(p=>`<div>${esc(p.name)}<span>${[p.role,p.years,p.now?'Now: '+p.now:''].filter(Boolean).map(esc).join(' · ')}</span></div>`).join(''));
+ const h=document.getElementById('past-h');if(h&&!past.length)h.style.display='none';
+});
+
+get('publications').then(d=>{
+ const by={};(d.items||[]).forEach(p=>(by[p.year]=by[p.year]||[]).push(p));
+ set('pubs',Object.keys(by).sort((x,y)=>y-x).map(y=>`<div class="year">${esc(y)}</div>`+by[y].map(p=>{
+  const t=p.link?`<a class="t" href="${esc(lnk(p.link))}" target="_blank" rel="noopener">${esc(p.title)}</a>`:`<span class="t">${esc(p.title)}</span>`;
+  return `<div class="pub">${t}<div class="au">${esc(p.authors).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')}</div><div class="jr">${esc(p.journal)}</div></div>`;
+ }).join('')).join(''));
+});
+
+get('funding').then(d=>{
+ const row=(k,v)=>v?`<span>${k}: ${esc(v)}</span>`:'';
+ set('projects',(d.projects||[]).map(p=>`<div class="prj"><b>${esc(p.title)}</b>${row('Funding agency',p.agency)}${row('Reference',p.reference)}${row('Duration',p.duration)}${row('PI',p.pi)}</div>`).join(''));
+ set('agencies',(d.agencies||[]).map(a=>{
+  const inner=a.logo?`<img src="${esc(img(a.logo))}" alt="${esc(a.name)}">`:esc(a.name);
+  return a.url?`<a class="lg" href="${esc(lnk(a.url))}" target="_blank" rel="noopener">${inner}</a>`:`<div class="lg">${inner}</div>`;
+ }).join(''));
+});
+})();
+</script>
+<script>
+(function(){
+var cv=document.getElementById('cv'),box=cv.parentNode,ctx=cv.getContext('2d');
+var cols=['#ff6b5b','#7c5cff','#12b5a6','#3b82f6','#e8559a','#f08a24','#2bb673'];
+var ex=null,fc=0,N=0,W=0,H=0,P=[],T=[],m={x:-999,y:-999},np={x:-999,y:-999};
+var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function rnd(a,b){return a+Math.random()*(b-a)}
+function fold(s){
+ var n=Math.floor(rnd(18,34)),pts=[],x=0,y=0,th=rnd(0,6.28),sg=Math.random()<.5?1:-1,left=0,cx=0,cy=0,lo=rnd(.25,.45),hi=rnd(.55,.85);
+ for(var i=0;i<n;i++){
+  if(left<=0){sg=-sg;left=Math.floor(rnd(2,8))}
+  left--;th+=sg*rnd(lo,hi);
+  x+=Math.cos(th)*7*s;y+=Math.sin(th)*7*s;pts.push([x,y]);cx+=x/n;cy+=y/n;
+ }
+ return pts.map(function(p){return [p[0]-cx,p[1]-cy]});
+}
+function pick(){var n={};cols.forEach(function(c){n[c]=0});P.forEach(function(p){if(!p.b)n[p.c]++});var lo=Math.min.apply(null,cols.map(function(c){return n[c]})),o=cols.filter(function(c){return n[c]===lo});return o[Math.floor(Math.random()*o.length)]}
+function spawn(inside){
+ var s=rnd(.75,1.25),pts=fold(s),side=Math.random()<.5?-1:1,k=3+Math.floor(Math.random()*3),L=Math.floor(pts.length/k),R=0;
+ var sx,sy,tr=0;do{sx=rnd(50,Math.max(60,W-50));sy=rnd(60,Math.max(70,H-60));tr++}while(tr<30&&((!inside&&Math.hypot(sx-m.x,sy-m.y)<140)||inZone(sx,sy,60*s)));
+ var p={s:s,c:pick(),a:rnd(0,6.28),va:rnd(-.005,.005),b:0,f:inside?1:0,q:[],x:sx,y:sy,vx:rnd(-.35,.35),vy:rnd(-.3,.3)};
+ for(var j=0;j<k;j++){
+  var sg=pts.slice(j*L,j===k-1?pts.length:(j+1)*L),o=[0,0];
+  sg.forEach(function(b){o[0]+=b[0]/sg.length;o[1]+=b[1]/sg.length;R=Math.max(R,Math.hypot(b[0],b[1]))});
+  p.q.push({o:o,l:sg.map(function(b){return [b[0]-o[0],b[1]-o[1]]}),x:0,y:0,r:0,vx:0,vy:0,vr:0,al:1,pt:[]});
+ }
+ p.R=R+25;P.push(p);
+}
+function zone(){
+ if(W<700){ex=null;return}
+ var c=cv.getBoundingClientRect(),x1=1e9,y1=1e9,x2=-1e9,y2=-1e9;
+ box.querySelectorAll('.in h1,.in p,.in .btns').forEach(function(e){var r=e.getBoundingClientRect();x1=Math.min(x1,r.left);y1=Math.min(y1,r.top);x2=Math.max(x2,r.right);y2=Math.max(y2,r.bottom)});
+ ex={x1:x1-c.left,y1:y1-c.top,x2:x2-c.left,y2:y2-c.top};
+}
+function inZone(x,y,g){return ex&&x>ex.x1-g&&x<ex.x2+g&&y>ex.y1-g&&y<ex.y2+g}
+function build(){P=[];T=[];N=W<600?6:13;for(var i=0;i<N;i++)spawn(true)}
+function size(){var d=window.devicePixelRatio||1;W=box.clientWidth;H=box.clientHeight;if(!W)return;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0);zone();build()}
+function pts(q){var c=Math.cos(q.r),s=Math.sin(q.r);q.pt=q.l.map(function(b){return [q.x+b[0]*c-b[1]*s,q.y+b[0]*s+b[1]*c]})}
+function step(){
+ if(++fc%30===0)zone();
+ for(var i=T.length-1;i>=0;i--){if(--T[i]<=0){spawn(false);T.splice(i,1)}}
+ var live=P.filter(function(p){return !p.b}).length;if(live+T.length<N)T.push(12);
+ for(i=P.length-1;i>=0;i--){
+  var p=P[i];p.x+=p.vx;p.y+=p.vy;p.a+=p.va;if(p.f<1)p.f=Math.min(1,p.f+.03);
+  if((p.x<40&&p.vx<0)||(p.x>W-40&&p.vx>0))p.vx*=-1;
+  if((p.y<50&&p.vy<0)||(p.y>H-50&&p.vy>0))p.vy*=-1;
+  if(ex&&!p.b){var g=p.R*.8;if(inZone(p.x,p.y,g)){
+   var dl=p.x-(ex.x1-g),dr=(ex.x2+g)-p.x,dt=p.y-(ex.y1-g),db=(ex.y2+g)-p.y,mn=Math.min(dl,dr,dt,db);
+   if(mn===dl){p.x=ex.x1-g;p.vx=-Math.abs(p.vx)}else if(mn===dr){p.x=ex.x2+g;p.vx=Math.abs(p.vx)}else if(mn===dt){p.y=ex.y1-g;p.vy=-Math.abs(p.vy)}else{p.y=ex.y2+g;p.vy=Math.abs(p.vy)}}}
+  if(!p.b){
+   var c=Math.cos(p.a),s=Math.sin(p.a);
+   p.q.forEach(function(q){q.x=p.x+q.o[0]*c-q.o[1]*s;q.y=p.y+q.o[0]*s+q.o[1]*c;q.r=p.a;pts(q)});
+   var hit=p.f>.6&&p.q.some(function(q){return q.pt.some(function(a){return Math.hypot(a[0]-m.x,a[1]-m.y)<16*p.s})});
+   if(hit){p.b=110;
+    p.q.forEach(function(q){var a=Math.atan2(q.y-m.y,q.x-m.x)+rnd(-.5,.5),v=rnd(2.5,4.5);q.vx=Math.cos(a)*v;q.vy=Math.sin(a)*v;q.vr=rnd(-.08,.08)})}
+  }else{
+   p.b--;
+   p.q.forEach(function(q){
+    var dx=q.x-m.x,dy=q.y-m.y,d=Math.hypot(dx,dy);
+    if(d<70&&d>1){q.vx+=dx/d*.5;q.vy+=dy/d*.5}
+    q.x+=q.vx;q.y+=q.vy;q.vx*=.985;q.vy*=.985;q.r+=q.vr;q.al=Math.min(1,p.b/60);pts(q);
+   });
+   if(p.b<=0)P.splice(i,1);
+  }
+ }
+ if(m.x>-500){if(np.x<-500){np.x=m.x;np.y=m.y}np.x+=(m.x-np.x)*.25;np.y+=(m.y-np.y)*.25}else np.x=-999;
+}
+function draw(t){
+ ctx.clearRect(0,0,W,H);ctx.lineCap='round';ctx.lineJoin='round';
+ P.forEach(function(p){
+  if(!p.b){var g=ctx.createRadialGradient(p.x,p.y,5,p.x,p.y,p.R);g.addColorStop(0,p.c+'2e');g.addColorStop(1,p.c+'00');
+   ctx.globalAlpha=p.f;ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,p.R,0,6.283);ctx.fill()}
+  p.q.forEach(function(q,k){
+   ctx.globalAlpha=.92*q.al*p.f;ctx.strokeStyle=p.c;ctx.fillStyle=p.c;ctx.lineWidth=2.2*p.s;
+   ctx.beginPath();q.pt.forEach(function(a,i){i?ctx.lineTo(a[0],a[1]):ctx.moveTo(a[0],a[1])});ctx.stroke();
+   q.pt.forEach(function(a){ctx.beginPath();ctx.arc(a[0],a[1],3.8*p.s,0,6.283);ctx.fill()});
+   ctx.globalAlpha=.35*q.al*p.f;ctx.fillStyle='#fff';
+   q.pt.forEach(function(a){ctx.beginPath();ctx.arc(a[0]-1,a[1]-1,1.3*p.s,0,6.283);ctx.fill()});
+   if(!p.b&&k){var a=p.q[k-1].pt,b=q.pt;ctx.globalAlpha=.92*p.f;ctx.beginPath();ctx.moveTo(a[a.length-1][0],a[a.length-1][1]);ctx.lineTo(b[0][0],b[0][1]);ctx.stroke()}
+  });
+ });
+ if(np.x>-500){
+  var r=(9+Math.sin(t*.005))*.9,h=ctx.createRadialGradient(np.x,np.y,r*.6,np.x,np.y,r+26);
+  h.addColorStop(0,'rgba(0,229,255,.65)');h.addColorStop(.4,'rgba(30,160,255,.28)');h.addColorStop(1,'rgba(30,140,255,0)');
+  ctx.globalAlpha=1;ctx.fillStyle=h;ctx.beginPath();ctx.arc(np.x,np.y,r+26,0,6.283);ctx.fill();
+  var g=ctx.createRadialGradient(np.x-3,np.y-3,1,np.x,np.y,r);g.addColorStop(0,'#e8f4ff');g.addColorStop(.5,'#3b82f6');g.addColorStop(1,'#1e3a8a');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(np.x,np.y,r,0,6.283);ctx.fill();
+ }
+ ctx.globalAlpha=1;
+}
+function pos(e){var r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top}
+box.addEventListener('pointermove',pos);box.addEventListener('pointerdown',pos);
+box.addEventListener('pointerleave',function(){m.x=m.y=-999});
+function loop(t){
+ if(document.getElementById('home').classList.contains('on')){
+  if(box.clientWidth!==W||box.clientHeight!==H)size();
+  if(W){if(!still)step();draw(t)}
+ }
+ requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "year": 2026,
+      "title": "Title of the paper goes here",
+      "link": "",
+      "authors": "**Your Name**, B. Surname, C. Surname",
+      "journal": "Journal Name, 12(3), 123–145"
+    },
+    {
+      "year": 2026,
+      "title": "Another paper title, a little longer to show wrapping",
+      "link": "",
+      "authors": "A. Surname, **Your Name**, C. Surname",
+      "journal": "Journal Name, 12(1), 10–22"
+    },
+    {
+      "year": 2025,
+      "title": "Title of an earlier paper",
+      "link": "",
+      "authors": "B. Surname, C. Surname, **Your Name**",
+      "journal": "Journal Name, 11(2), 45–67"
+    }
+  ]
+}

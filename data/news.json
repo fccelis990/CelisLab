@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "PhD contract available",
+      "date": "2026-11-20",
+      "tag": "Open position",
+      "text": "Description, requirements and deadline. Add a link to the full call below.",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "New paper published",
+      "date": "2026-10-15",
+      "tag": "Paper",
+      "text": "Short summary of the paper and where it was published.",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Award or recognition",
+      "date": "2026-09-10",
+      "tag": "Award",
+      "text": "Prizes, talks, outreach activities, new members...",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "New member joins the group",
+      "date": "2026-08-01",
+      "tag": "Team",
+      "text": "Welcome, name, and what they will work on.",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Outreach activity",
+      "date": "2026-07-05",
+      "tag": "Outreach",
+      "text": "Add a photo in the form to show it next to the text.",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

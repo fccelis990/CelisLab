@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "title": "Project title",
+      "agency": "Name of the agency",
+      "reference": "PID2025-000000",
+      "duration": "2025–2028",
+      "pi": "Your Name"
+    },
+    {
+      "title": "Another funded project",
+      "agency": "Name of the agency",
+      "reference": "Reference",
+      "duration": "2024–2026",
+      "pi": "Name Surname"
+    }
+  ],
+  "agencies": [
+    {
+      "name": "Agency 1",
+      "logo": "",
+      "url": ""
+    },
+    {
+      "name": "Agency 2",
+      "logo": "",
+      "url": ""
+    },
+    {
+      "name": "Agency 3",
+      "logo": "",
+      "url": ""
+    }
+  ]
+}
