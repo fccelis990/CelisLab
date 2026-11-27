@@ -73,6 +73,7 @@ content:
         fields:
           - { name: title, label: Project title, type: string }
           - { name: agency, label: Funding agency, type: string }
+          - { name: call, label: Call, type: string }
           - { name: reference, label: Reference, type: string }
           - { name: duration, label: Duration, type: string }
           - { name: pi, label: PI, type: string }
