@@ -1,64 +1,13 @@
 {
   "items": [
     {
-      "name": "Dr. Your Name",
+      "name": "Dr. Francisco Calderón",
       "role": "Principal Investigator",
-      "photo": "",
-      "email": "name@university.edu",
-      "linkedin": "",
-      "orcid": "",
-      "bio": "Short line about research interests.",
-      "past": false,
-      "years": "",
-      "now": ""
-    },
-    {
-      "name": "Dr. Name Surname",
-      "role": "Postdoctoral Researcher",
-      "photo": "",
-      "email": "",
-      "linkedin": "",
-      "orcid": "",
-      "bio": "Short line about research interests.",
-      "past": false,
-      "years": "",
-      "now": ""
-    },
-    {
-      "name": "Name Surname",
-      "role": "PhD Student",
-      "photo": "",
-      "email": "",
-      "linkedin": "",
-      "orcid": "",
-      "bio": "Short line about research interests.",
-      "past": false,
-      "years": "",
-      "now": ""
-    },
-    {
-      "name": "Name Surname",
-      "role": "PhD Student",
-      "photo": "",
-      "email": "",
-      "linkedin": "",
-      "orcid": "",
-      "bio": "",
-      "past": true,
-      "years": "2021–2025",
-      "now": "Postdoc at Institution"
-    },
-    {
-      "name": "Name Surname",
-      "role": "MSc Student",
-      "photo": "",
-      "email": "",
-      "linkedin": "",
-      "orcid": "",
-      "bio": "",
-      "past": true,
-      "years": "2023–2024",
-      "now": "Analyst at Company"
+      "email": "calderonf@unican.es",
+      "linkedin": "https://www.linkedin.com/in/fcalderoncelis/",
+      "orcid": "https://orcid.org/0000-0003-0331-1595",
+      "bio": "I'm Ramon y Cajal fellow at Univesity of Cantabria. I graduated in Chemistry at the University of the Basque Country (Spain) and pursue a PhD in Chemical and Biochemical Analysis at the University of Oviedo (Spain). My research aims to overcome methodological limitations in the quantitative analysis of proteins and PTMs, focusing on the development of synthetic proteolytic nanozymes to improve quantitative proteomics workflows, and advanced nanomaterial-based strategies for phosphoproteomics enrichment.",
+      "past": false
     }
   ]
 }
