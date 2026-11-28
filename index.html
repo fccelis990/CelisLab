@@ -235,10 +235,11 @@ get('team').then(d=>{
 });
 
 get('publications').then(d=>{
+ const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>');
  const by={};(d.items||[]).forEach(p=>(by[p.year]=by[p.year]||[]).push(p));
  set('pubs',Object.keys(by).sort((x,y)=>y-x).map(y=>`<div class="year">${esc(y)}</div>`+by[y].map(p=>{
-  const t=p.link?`<a class="t" href="${esc(lnk(p.link))}" target="_blank" rel="noopener">${esc(p.title)}</a>`:`<span class="t">${esc(p.title)}</span>`;
-  return `<div class="pub">${t}<div class="au">${esc(p.authors).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')}</div><div class="jr">${esc(p.journal)}</div></div>`;
+  const t=p.link?`<a class="t" href="${esc(lnk(p.link))}" target="_blank" rel="noopener">${md(p.title)}</a>`:`<span class="t">${md(p.title)}</span>`;
+  return `<div class="pub">${t}<div class="au">${md(p.authors)}</div><div class="jr">${esc(p.journal)}</div></div>`;
  }).join('')).join(''));
 });
 
