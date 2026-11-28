@@ -59,8 +59,31 @@ content:
           - { name: year, label: Year, type: number }
           - { name: title, label: Title (use *asterisks* for italics), type: string }
           - { name: link, label: Link (DOI or URL), type: string }
+          - { name: image, label: Image (optional – graphical abstract or journal cover), type: image }
           - { name: authors, label: Authors (put your name between ** **), type: string }
           - { name: journal, label: Journal, type: string }
+  - name: research
+    label: Research
+    type: file
+    path: data/research.json
+    format: json
+    fields:
+      - { name: subtitle, label: Subheading, type: string }
+      - { name: intro, label: General description, type: text }
+      - name: lines
+        label: Research lines (order = order on the web)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Brief description, type: text }
+          - { name: why, label: Why it matters, type: text }
+          - { name: image, label: Image, type: image }
+          - name: color
+            label: Color (optional; by default assigned by order)
+            type: select
+            options:
+              values: [Coral, Violet, Teal, Amber, Pink, Blue]
   - name: funding
     label: Funding
     type: file
