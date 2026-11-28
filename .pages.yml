@@ -57,7 +57,7 @@ content:
         list: true
         fields:
           - { name: year, label: Year, type: number }
-          - { name: title, label: Title, type: string }
+          - { name: title, label: Title (use *asterisks* for italics), type: string }
           - { name: link, label: Link (DOI or URL), type: string }
           - { name: authors, label: Authors (put your name between ** **), type: string }
           - { name: journal, label: Journal, type: string }
