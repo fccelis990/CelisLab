@@ -57,6 +57,8 @@ h2.sh{font-size:1.7rem;margin-bottom:1.2rem}
 .hero p{text-align:center;hyphens:none}
 .lg:has(img){border-color:transparent}.lg img{max-height:64px;max-width:200px;width:auto}
 .ph:has(img){padding:0;overflow:hidden}
+.ph:has(iframe){display:block;padding:0;overflow:hidden}
+.ph iframe{display:block;width:100%;height:100%;min-height:320px;border:0}
 .tg{display:inline-block;margin-left:.6rem;padding:.05rem .65rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.75rem;font-weight:600}
 .nw h3{font-size:1.3rem;margin:.2rem 0 .4rem}.nw p{margin:0;color:var(--muted)}
 .page{padding:4rem 0 5rem}
@@ -89,16 +91,18 @@ h2.sh{font-size:1.7rem;margin-bottom:1.2rem}
 .av img{width:100%;height:100%;object-fit:cover}
 .card h3{font-size:1.15rem}.card p{margin:.2rem 0 0;font-size:.92rem;color:var(--muted)}
 .card .role{color:var(--accent);font-weight:500}
-.soc{display:flex;gap:.6rem;justify-content:center;margin:.7rem 0}
+.soc{display:flex;gap:.6rem;justify-content:center;align-items:center;flex-wrap:wrap;margin:.7rem 0}
 .soc a{color:var(--muted);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line)}
 .soc a:hover{color:var(--accent);border-color:var(--accent)}
+.soc a.txt{width:auto;height:30px;border:none;border-radius:0;padding:0 .2rem;font-size:.9rem;font-weight:500;text-decoration:none}
+.soc a.txt:hover{text-decoration:underline} 
 .ic{width:16px;height:16px}
 .past{display:grid;gap:.6rem 2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .past div{padding:.6rem 0;border-bottom:1px solid var(--line)}.past span{display:block;color:var(--muted);font-size:.92rem}
 .cols{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .cols h2{font-size:1.5rem;margin-bottom:.8rem}.cols ul{padding-left:1.1rem;color:var(--muted)}
 .info p{margin:.2rem 0 1rem;color:var(--muted)}.info b{color:var(--text);display:block}
-.ph{min-height:280px;border-radius:16px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:1rem;background:linear-gradient(135deg,var(--accent-soft),var(--surface));border:1px solid var(--line)}
+.ph{min-height:320px;border-radius:16px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:1rem;background:linear-gradient(135deg,var(--accent-soft),var(--surface));border:1px solid var(--line)}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;padding:2rem 0}
 @media (max-width:760px){.row,.row.alt,.nw.has{grid-template-columns:1fr;gap:1.5rem}.row.alt .fg{order:0}}
 </style>
@@ -173,8 +177,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;paddi
 <p><b>Address</b>Instituto de Biomedicina y Biotecnología de Cantabria (IBBTEC)<br>C/ Albert Einstein 22 (PCTCAN)<br>39011 Santander, Spain</p></div>
 </div>
 <div class="cols" style="margin-top:3rem">
-<div class="ph"><img src="images/building.jpg" alt="Building" style="width:100%;height:100%;min-height:280px;object-fit:cover" onerror="this.parentNode.innerHTML='<span>Photo of the building<br><small>(add images/building.jpg)</small></span>'"></div>
-<div class="ph"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.419822242017!2d-3.8755010239422583!3d43.45183177111234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4948512cf9eabb%3A0xed5cd51775cdea23!2sInstituto%20de%20Biomedicina%20y%20Biotecnolog%C3%ADa%20de%20Cantabria%20(IBBTEC)!5e0!3m2!1ses!2ses!4v1795806576616!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></small><br><a href="https://www.google.com/maps/search/?api=1&amp;query=IBBTEC+Santander" target="_blank" </span></div>
+<div class="ph"><img src="images/building.jpg" alt="Building" style="width:100%;height:100%;min-height:320px;object-fit:cover" onerror="this.parentNode.innerHTML='<span>Photo of the building<br><small>(add images/building.jpg)</small></span>'"></div>
+<div class="ph"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.419822242017!2d-3.8755010239422583!3d43.45183177111234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4948512cf9eabb%3A0xed5cd51775cdea23!2sInstituto%20de%20Biomedicina%20y%20Biotecnolog%C3%ADa%20de%20Cantabria%20(IBBTEC)!5e0!3m2!1ses!2ses!4v1795806576616!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 </div></div></section>
 </main>
 <footer><div class="wrap">© 2026 Biomolecular Analysis and Characterization · Universidad de Cantabria · IBBTEC</div></footer>
