@@ -10,6 +10,11 @@
       "teaching": "https://web.unican.es/departamentos/biomol/miembros-del-departamento/personal-docente-e-investigador/profesor?pi=92684D27CC1AC2AB&a=2026",
       "bio": "I'm Ramon y Cajal fellow at Univesity of Cantabria. I graduated in Chemistry at the University of the Basque Country (Spain) and pursue a PhD in Chemical and Biochemical Analysis at the University of Oviedo (Spain). My research aims to overcome methodological limitations in the quantitative analysis of proteins and PTMs, focusing on the development of synthetic proteolytic nanozymes to improve quantitative proteomics workflows, and advanced nanomaterial-based strategies for phosphoproteomics enrichment.",
       "past": false
+    },
+    {
+      "name": "Test",
+      "role": "Test",
+      "past": false
     }
   ]
 }
