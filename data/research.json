@@ -1,0 +1,27 @@
+{
+  "subtitle": "From analytical measurement to a deeper understanding of biomolecular complexity",
+  "intro": "We investigate proteins and proteoforms using quantitative analytical approaches, biochemical characterization and functional nanomaterials. Our goal is to develop new biochemical methods and analytical tools that improve quantitative biomolecular analysis. In particular, we make protein digestion and PTM enrichment more efficient and selective, enhancing the characterization and quantification of proteins and proteoforms in complex biological systems.",
+  "lines": [
+    {
+      "title": "Proteolysis",
+      "description": "We explore functional nanomaterials as proteolytic tools for protein digestion and peptide generation, opening alternative routes for proteomics workflows.",
+      "why": "Quantitative proteomics often relies on relative rather than truly absolute measurements. Protein digestion is one of the key steps limiting quantitative accuracy, as conventional enzymatic digestion is intrinsically sensitive to protein structure, the surrounding environment, and reaction conditions, often resulting in incomplete cleavage and biased peptide recovery. Faster, more reproducible digestion improves the coverage and reliability of proteomic analyses.",
+      "image": "images/research-proteolysis.svg",
+      "color": ""
+    },
+    {
+      "title": "Selective enrichment of PTMs",
+      "description": "We investigate selective enrichment strategies for phosphopeptides, combining functional materials and analytical workflows to improve the analysis of phosphorylation patterns.",
+      "why": "Post-translational modifications (PTMs), such as phosphorylation, play essential roles in regulating biological processes and represent important analytical targets in proteomics. Many chemically modified proteins and peptides are present at low abundance, while PTMs often occur substoichiometrically, meaning that only a small fraction of the protein population is modified at a given time. Selective enrichment strategies prior to mass spectrometric analysis are therefore essential to improve the detection and coverage of modified species.",
+      "image": "images/research-ptm-enrichment.svg",
+      "color": ""
+    },
+    {
+      "title": "Environmental chelators",
+      "description": "Bacteria and plants produce metal chelators to scavenge essential metals and minerals from their environment. We develop new strategies to characterize these compounds.",
+      "why": "Knowing how organisms capture metals helps us understand nutrient availability in soils, plant and microbial health, and the fate of metals in the environment.",
+      "image": "images/research-chelators.svg",
+      "color": ""
+    }
+  ]
+}
